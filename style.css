@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
+body{
+  background-color:rgb(200,200,200);
+}
+
+#title{
+  text-align:center;
+  margin:50px;
+}
+
+#title h1{
+  font-size:5em;
+  font-family:lobster
+}
+
+#clock{
+  height:400px;
+  width:400px;
+  background-color:rgb(255,50,50);
+  border-radius:50%;
+  border: 15px solid green;
+  text-align:center;
+  margin:auto;
+  font-family:lobster;
+}
+
+#text{
+  position:relative;
+  top:10%
+}
+
+#text h1{
+  font-size:4em;
+}
+
+#screen{
+  position:relative;
+  top:15%;
+  left:10%;
+  height:20%;
+  width:80%;
+  padding-top: 2%;
+  border:1px solid white;
+  font-size:3em;
+}
+
+#start-reset{
+  position:relative;
+  top:25%;
+}
+
+#start-reset button{
+  width:20%;
+}
+
+
+#set-time{
+  margin:50px 0;
+}
+
+.box{
+  border: 15px solid rgb(255,50,50);
+  border-radius:20%;
+  text-align:center;
+  padding-bottom:3%;
+  background-color:green;
+  font-family:lobster;
+}
+
+#work-time span{
+  margin: 10%;
+  font-size:2em;
+}
+
+#rest-time span{
+  margin: 10%;
+  font-size:2em;
+}
