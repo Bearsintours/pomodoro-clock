@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
   <link rel="stylesheet" href="style.css">
@@ -12,29 +12,15 @@
 
 
 <body>
-  <div class="container">
+  <div class="container-fluid">
     <div id="title">
       <h1>Pomodoro Clock</h1>
     </div>
-    <div id="clock">
-      <div id="text">
-        <h1 id="message">Time</h1>
-      </div>
-      <div id="screen">
-      </div>
-      <div id="start-reset">
-        <button style="button" id="start">Start
-        </button>
-        <button style="button" id="reset">Reset
-        </button>
-      </div>
-    </div>
-
-    <div id="set-time" class="container">
-      <div class="row">
-        <div id="work" class=" box col-md-4">
+    <div class="row justify-content-around">
+      <div class="col-md-3 left">
+        <div id="work" class="box">
           <div id="work-time">
-            <h2>Work time</h2>
+            <h2>Work</h2>
             <button type="button" id="less-work-time">-
             </button>
             <span id="work-time-output">5</span>
@@ -42,11 +28,26 @@
             </button>
           </div>
         </div>
-        <div class="col-md-4">
+      </div>
+      <div class="col-md-6">
+        <div id="clock">
+          <div id="text">
+            <h1 id="message">Time</h1>
+          </div>
+          <div id="screen">
+          </div>
+          <div id="start-reset">
+            <button style="button" id="start">Start
+            </button>
+            <button style="button" id="reset">Reset
+            </button>
+          </div>
         </div>
-        <div id="rest" class="box col-md-4">
+      </div>
+      <div class="col-md-3 right">
+        <div id="rest" class="box">
           <div id="rest-time">
-            <h2>Rest time</h2>
+            <h2>Rest</h2>
             <button type="button" id="less-rest-time">-
             </button>
             <span id="rest-time-output">3</span>
@@ -57,7 +58,6 @@
       </div>
     </div>
   </div>
-  <script rel="stylesheet" src="./data.js"></script>
 </body>
 
 </html>
