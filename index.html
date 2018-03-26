@@ -1,63 +1,65 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-  <link rel="stylesheet" href="style.css">
-  <title>Pomorodo Clock</title>
-</head>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Pomorodo Clock</title>
+  </head>
 
 
-<body>
-  <div class="container-fluid">
-    <div id="title">
-      <h1>Pomodoro Clock</h1>
+  <body>
+    <div class="container-fluid">
+      <div id="title">
+        <h1>Pomodoro Clock</h1>
+      </div>
+      <div class="row justify-content-around">
+        <div class="left">
+          <div id="work" class="box">
+            <div id="work-time">
+              <h2>Work</h2>
+              <button type="button" id="less-work-time">-
+              </button>
+              <span id="work-time-output">5</span>
+              <button type="button" id="more-work-time">+
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div id="clock">
+            <div id="text">
+              <h1 id="message">Time</h1>
+            </div>
+            <div id="screen">
+            </div>
+            <div id="start-reset">
+              <button id="start">Start
+              </button>
+              <button id="reset">Reset
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <div id="rest" class="box">
+            <div id="rest-time">
+              <h2>Rest</h2>
+              <button type="button" id="less-rest-time">-
+              </button>
+              <span id="rest-time-output">3</span>
+              <button type="button" id="more-rest-time">+
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="row justify-content-around">
-      <div class="col-md-3 left">
-        <div id="work" class="box">
-          <div id="work-time">
-            <h2>Work</h2>
-            <button type="button" id="less-work-time">-
-            </button>
-            <span id="work-time-output">5</span>
-            <button type="button" id="more-work-time">+
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div id="clock">
-          <div id="text">
-            <h1 id="message">Time</h1>
-          </div>
-          <div id="screen">
-          </div>
-          <div id="start-reset">
-            <button style="button" id="start">Start
-            </button>
-            <button style="button" id="reset">Reset
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 right">
-        <div id="rest" class="box">
-          <div id="rest-time">
-            <h2>Rest</h2>
-            <button type="button" id="less-rest-time">-
-            </button>
-            <span id="rest-time-output">3</span>
-            <button type="button" id="more-rest-time">+
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</body>
-
+  <script src="data.js"></script>
+  </body>
+  
 </html>
